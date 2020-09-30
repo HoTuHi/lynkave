@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hotuhi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">ALL</a>
+  <a href="#code">CODE</a>
+  <a href="#image">IMAGE</a>
+  <a href="#video">VIDEO</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars colorrrrr"></i>
+  </a>
+</div>
+
+<div class="content">
+  HOTUHI
+</div>
+
+    </header>
+
+    
+    <main>
+        <div class="cont-us">
+                <ul class="cont">
+                <li>
+                  <a class="fa fa-facebook" href="https://www.facebook.com/hotuhi12"></a>
+                </li>
+                <li>
+                  <a class="fa fa-instagram" href="https://www.instagram.com/hotu_hi/"></a>
+                </li>
+                <li>
+                  <a class="fa fa-globe" href="hotuhi.github.io"></a>
+                </li>
+                <li>
+                  <a class="fa fa-github" href="https://github.com/HoTuHi"></a>
+                </li>
+              </ul>
+        </div>
+        <div class="container">
+             <h1 class="content-main" id="code">Code</h1>
+              <div class="parent">
+                <div class="box">
+                   <span>
+                       <a class="fa fa-windows" href="#"></a>
+                       <h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus massa libero, bibendum bibendum enim fringilla et. Etiam dignissim molestie dolor ut cursus.</h5>
+                   </span>
+                </div>
+                                    <div class="box">
+                   <span>
+                       <a class="fa fa-linkedin" href="#"></a>
+                       <h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus massa libero, bibendum bibendum enim fringilla et. Etiam dignissim molestie dolor ut cursus.</h5>
+                   </span>
+                </div>                    <div class="box">
+                   <span>
+                       <a class="fa fa-link" href="#"></a>
+                       <h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus massa libero, bibendum bibendum enim fringilla et. Etiam dignissim molestie dolor ut cursus.</h5>
+                   </span>
+                </div>                    <div class="box">
+                   <span>
+                       <a class="fa fa-apple" href="#"></a>
+                       <h5> Lorem ipsum dolor sit amet, adipiscing elit. Phasellus finibus massa libero, bibendum bibendum enim fringilla et. Etiam dignissim molestie dolor ut cursus.</h5>
+                   </span>
+                </div>              
+              </div>
+        </div>
+         <h1 class="content-main" id="image">IMAGE</h1>
+
+        <div class="img-zone">
+              <div class="parent-card">
+            <div class=" box card">
+              <h1 class="img-title">Title Here</h1>
+              <div class="visual">
+                  <img src="./img/bg.jpg" alt="" class="img-size">
+              </div>
+              <p>Lorem ipsum dolor sit amet, adipiscing elit. Phasellus finibus massa libero, bibendum bibendum enim fringilla et. Etiam dignissim molestie dolor ut cursus.</p>
+              <a href="#" class="cas">asdasdasd</a>
+            </div>
+            
+          </div>
+
+        </div>
+        <h1 class="content-main" id="video">VIDEO</h1>
+
+        <div class="video">
+            <iframe width="720" height="500" src="https://www.youtube.com/embed/61HoQE8_ccQ?list=PL9aaL8ZEQfhs-_DcK2gkzrbNxFaBCNeLf" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+    </main>
+    <footer>
+       <div id="haha">
+                   POWERED By <a href="https://www.facebook.com/hotuhi12" class="linkave">HOTUHI</a>
+       </div>
+    </footer>
+    <script>
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
+    </script>
+</body>
+</html>
