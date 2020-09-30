@@ -1,6 +1,8 @@
 
 
-
+h1,h2,h3,h4,h5{
+    margin: 0;
+}
 
 html{
     font-family: sans-serif;
@@ -145,12 +147,6 @@ hr.new1 {
     width: 7rem;
 }
 
-
-
-
-
-
-
 .fa {
     margin: 10px; 50px;
     font-size: 2rem !important;
@@ -191,10 +187,16 @@ hr.new1 {
   }
 
 .box {
+    text-indent: 10px;
     text-align: center;
     padding: 25px;
+    transition: all 1s;
+    opacity: .8;
 }
-
+.box:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
 .img-size {
     height: 120px;
 }
@@ -202,13 +204,6 @@ hr.new1 {
 .img-title {
     background-color: bisque;
 }
-
-.visual {
-      height: 220px;
-      width: 100%;
-    }
-
-
 
 .cas {
     color: blue;
@@ -227,15 +222,6 @@ hr.new1 {
 .linkave {
     color: red;
 }
-
-footer {
-    height: 120px;
-    background-color: black;
-    display: grid;
-    place-items: center;
-    color: aqua;     
-}
-
 .img-zone {
     margin-bottom: 50px;
 }
@@ -245,8 +231,17 @@ footer {
 }
 
 .video {
-     display: grid;
+    display: grid;
     place-items: center;
     width: 50vh;
     margin: 50px;
 }
+
+footer {
+    height: 120px;
+    background-color: black;
+    display: grid;
+    place-items: center;
+    color: aqua;     
+}
+
